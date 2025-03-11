@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+.titan-one-regular {
+  font-family: "Titan One", serif;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #562405;
+}
+
+body {
+  color: #562405;
+  font-family: "Arial", sans-serif;
+  background-color: #f1e4dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.header {
+  font-family: "Gamja Flower", serif;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 20px 0;
+  line-height: 2.5rem;
+}

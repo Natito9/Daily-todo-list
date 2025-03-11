@@ -1,0 +1,31 @@
+import { useState } from "react";
+import "./NewTodo.css";
+export function NewTodo({ onSubmit }) {
+  const [newItem, setNewItem] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    onSubmit(newItem);
+
+    setNewItem("");
+  }
+  return (
+    <form onSubmit={handleSubmit} className="new-item-form">
+      <div className="form-row">
+        <label htmlFor="item" className="newItemlabel">
+          NEW TO DO :
+        </label>
+        <input
+          value={newItem}
+          onChange={(e) => setNewItem(e.target.value)}
+          type="text"
+          placeholder="Type here..."
+          id="item"
+        />
+      </div>
+
+      <button className="btn">ADD</button>
+    </form>
+  );
+}
